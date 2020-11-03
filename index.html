@@ -6,14 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap-4.3.1.css">
+    <link rel="stylesheet" href="css/bootstrap-4.3.1.css">
+	
+	<style>
+		.hero-image{
+			background: linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('imgs/bg-index.png'); 
+			background-position: center; 
+			background-repeat: no-repeat; 
+			background-size: cover;
+		}
+		#AboutSection h1, #MySiteSection h1{
+			color: #D08C60;
+			
+		}
 
+		#AboutSection h3{
+			color: #D08C60;
+		}
+	</style>
+	
     <title>Cloud Technology</title>
 </head>
 <body>
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="container"> <a class="navbar-brand" href="../index.html"><img src="../imgs/siteIcons.svg" alt="" height="35px"></a>
+	<div class="hero-image" style="color: #FAF9F9;">
+		<nav class="navbar navbar-expand-lg navbar-dark">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
@@ -24,9 +41,16 @@
 				  	<li class="nav-item"><a href="docs/tutorial.html" class="nav-link">Docker Tutorial</a></li>
 		  		</ul>
 			</div>
+		</nav>
+	</div>
+    	<!-- END: Navbar -->
+	<div class="container text-center">
+			<div id="HeaderText" class="row justify-content-center" >
+				<div class="col-xl-12" style="text-shadow: 0px 10px 0px #00000029;"><p><strong>Cloud Technology</strong></p></div>
+				<div class="col-xl-8" style="text-shadow: 0px 5px 0px #00000029;"><h2>Site by Pham Thuy Vu Ton</h2></div>
+			</div>
 		</div>
-	</nav>
-    <!-- END: Navbar -->
+	</div>
 	<!-- Footer -->
 	<footer class="container-fluid justify-content-center">
 		<div class="row justify-content-center">
