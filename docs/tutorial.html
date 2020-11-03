@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap-4.3.1.css">
 
-    <title>Data Center</title>
+    <title>Docker Tutorial</title>
 </head>
 <body>
 	<!-- Navbar -->
@@ -27,7 +27,83 @@
 			</div>
 		</div>
 	</nav>
-    <!-- END: Navbar -->
+    	<!-- END: Navbar -->
+	<main>
+		<div class="cont">
+			<div class="title">
+				<h1 style="font-size: 50px">Docker Tutorial</h1>
+			</div>
+		<div>
+			<h3> Installing Docker on Windows </h3>
+			<ol>
+				<li>
+					Download the Docker Desktop Installer <a style="text-decoration: lightblue" href="https://docs.docker.com/get-docker/">here</a>
+				</li>
+				<li>Make sure you have:</li>
+					<ul>
+						<li> Windows 10 or later </li>
+						<li> Enabled Hyper-V and Container Windows features <a style="text-decoration: lightblue" href="https://techcommunity.microsoft.com/t5/itops-talk-blog/step-by-step-enabling-hyper-v-for-use-on-windows-10/ba-p/267945">(instruction</a>
+						</li>
+						<li> Up to Date Linux kernel WSL2 Package <a style="text-decoration: lightblue" href="https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel">(download)</a></li>
+					</ul>
+				
+				<h3>Setting up Apache Image in Windows</h3>
+				<ol>
+				<li>Open up the Command Prompt, type and run the following command “docker pull ubuntu”.</li>
+				<li>Type and run “docker run -it ubuntu:latest /bin/bash” command to make a container and run the image.</li>
+				<li>Type the command “apt-get update” to install the Ubuntu updates.</li>
+				<li>Type the command “apt-get install apache2” to download Apache web server. Make sure to: </li>
+				<ul>
+					<li>
+						Type ‘Y’ when asked, to move on.
+					</li>
+					<li>
+						Choose your geographical location which is the region your machine currently resides in.
+					</li>
+					<li>
+						Select the time-zone of your machine.
+					</li>
+				</ul>
+					<li>
+						Then to install your document editor, type in “apt-get install vim”.
+
+					</li>
+					<li>
+						After all is set up, open another command prompt instance.
+					</li>
+					<li>
+						Type “docker ps” in the new command prompt.
+					</li>
+					<li>
+						Type “docker run -it -p 127.0.0.1:80:80 -v FolderOnMachine:/var/www/html new image name /bin/bash” to boot up your Apache Web Server.
+					<ul>
+						<li>
+							Preferably set up the folder in Windows (C:), don’t do it in Downloads, Desktop, Images, etc.
+						</li>
+					</ul>
+				<li>Type and run “cd /var/www/html”</li>
+				<li>Type “vim index.html” to make a index.html file.</li>
+				<li>Press 'i'</li>
+				<li>Type in basic html site content. Example:</li>
+					
+				<p>&lt;html&gt;</p>
+				<p>&emsp;&emsp;&lt;head></p>
+				<p>&emsp;&emsp;&emsp;&emsp;&lt;title>Home Page&lt;/title&gt;</p>
+				<p>	&emsp;&emsp;&lt;/head&gt;</p>
+				<p>	&emsp;&emsp;&lt;body&gt;</p>
+				<p>	&emsp;&emsp;&emsp;&emsp;&lt;h1>Hello world!&lt;/h1&gt;</p>
+				<p>	&emsp;&emsp;&emsp;&emsp;&lt;p>Tutorial on how to install Docker&lt;/p&gt;</p>
+				<p>&emsp;&emsp;&lt;/body></p>
+				<p>&lt;/html></p>
+
+				<li>Return to the command prompt then type “:wq” finally press Enter.</li>
+				<p>Eevrything is setup!</p>
+			</ol>
+				<h3>Viewing Your Local Website</h3>
+				<p>To view your local server, open your browser and type in the IP in step 10. For example, it will be ‘127.0.0.1’ (excluding :80:80). You should be able to see your site now.</p>
+		</div>
+		</div>
+
 	<!-- Footer -->
 	<footer class="container-fluid justify-content-center">
 		<div class="row justify-content-center">
@@ -35,6 +111,7 @@
 		</div>
 	</footer>
 	<!-- END: Footer -->
+	</main>
 	<!-- JavaScript Files-->
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/popper.min.js"></script>
