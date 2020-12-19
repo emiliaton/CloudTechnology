@@ -60,8 +60,9 @@ img{
 }
 
 
-footer{height: 25vh;
+footer{
 background-color: #000000;
+color: white;
 }
 
 .foot{
