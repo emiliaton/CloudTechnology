@@ -25,7 +25,7 @@
     <!--stylesheet-->
     <link rel="stylesheet" href="../style.css">
 
-    <title>Docker Tutorial</title>
+    <title style="font-family: Times New Roman">Docker Tutorial</title>
 </head>
 <body style="background-image: url('../img/bg_vc.png');">
 	<!-- Navbar -->
@@ -53,62 +53,62 @@
 				<h1 style="font-size: 50px">Docker Tutorial</h1>
 			</div>
 			<div>
-				<h3>Installing Docker on Windows</h3>
+				<h3 style="font-family: Times New Roman">Installing Docker on Windows</h3>
 				<ol>
 				<li>
 					Download the Docker Desktop Installer <a style="text-decoration: lightblue" href="https://docs.docker.com/get-docker/">here</a>
 				</li>
-				<li>Make sure you have:</li>
+				<li style="font-family: Times New Roman">Make sure you have:</li>
 					<ul>
-						<li> Windows 10 or later </li>
-						<li> Enabled Hyper-V and Container Windows features <a style="text-decoration: lightblue" href="https://techcommunity.microsoft.com/t5/itops-talk-blog/step-by-step-enabling-hyper-v-for-use-on-windows-10/ba-p/267945">(instruction)</a>
+						<li style="font-family: Times New Roman"> Windows 10 or later </li>
+						<li style="font-family: Times New Roman"> Enabled Hyper-V and Container Windows features <a style="text-decoration: lightblue" href="https://techcommunity.microsoft.com/t5/itops-talk-blog/step-by-step-enabling-hyper-v-for-use-on-windows-10/ba-p/267945">(instruction)</a>
 						</li>
-						<li> Up to Date Linux kernel WSL2 Package <a style="text-decoration: lightblue" href="https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel">(download)</a></li>
+						<li style="font-family: Times New Roman"> Up to Date Linux kernel WSL2 Package <a style="text-decoration: lightblue" href="https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel">(download)</a></li>
 					</ul>
 				
-				<h3>Setting up Apache Image in Windows</h3>
+				<h3 style="font-family: Times New Roman">Setting up Apache Image in Windows</h3>
 				<ol>
-				<li>Open up the Command Prompt, type and run the following command “docker pull ubuntu”.</li>
-				<li>Type and run “docker run -it ubuntu:latest /bin/bash” command to make a container and run the image.</li>
-				<li>Type the command “apt-get update” to install the Ubuntu updates.</li>
-				<li>Type the command “apt-get install apache2” to download Apache web server. Make sure to: </li>
+				<li style="font-family: Times New Roman">Open up the Command Prompt, type and run the following command “docker pull ubuntu”.</li>
+				<li style="font-family: Times New Roman">Type and run “docker run -it ubuntu:latest /bin/bash” command to make a container and run the image.</li>
+				<li style="font-family: Times New Roman">Type the command “apt-get update” to install the Ubuntu updates.</li>
+				<li style="font-family: Times New Roman">Type the command “apt-get install apache2” to download Apache web server. Make sure to: </li>
 				<ul>
-					<li>
+					<li style="font-family: Times New Roman">
 						Type ‘Y’ when asked, to move on.
 					</li>
-					<li>
+					<li style="font-family: Times New Roman">
 						Choose your geographical location which is the region your machine currently resides in.
 					</li>
-					<li>
+					<li style="font-family: Times New Roman">
 						Select the time-zone of your machine.
 					</li>
 				</ul>
-					<li>
+					<li style="font-family: Times New Roman">
 						Then to install your document editor, type in “apt-get install vim”.
 
 					</li>
-					<li>
+					<li style="font-family: Times New Roman">
 						After all is set up, open another command prompt instance.
 					</li>
-					<li>
+					<li style="font-family: Times New Roman">
 						Type “docker ps” in the new command prompt.
 					</li>
-					<li>
+					<li style="font-family: Times New Roman">
 						Type “docker run -it -p 127.0.0.1:80:80 -v FolderOnMachine:/var/www/html new image name /bin/bash” to boot up your Apache Web Server.
 					<ul>
-						<li>
+						<li style="font-family: Times New Roman">
 							Preferably set up the folder in Windows (C:), don’t do it in Downloads, Desktop, Images, etc.
 						</li>
 					</ul>
-				<li>Type and run “cd /var/www/html”</li>
-				<li>Type “vim index.html” to make a index.html file.</li>
-				<li>Press 'i'</li>
-				<li>Type in basic html site content.</li>
-				<li>Return to the command prompt then type “:wq” finally press Enter.</li>
-				<p>Eevrything is setup!</p>
+				<li style="font-family: Times New Roman">Type and run “cd /var/www/html”</li>
+				<li style="font-family: Times New Roman">Type “vim index.html” to make a index.html file.</li>
+				<li style="font-family: Times New Roman">Press 'i'</li>
+				<li style="font-family: Times New Roman">Type in basic html site content.</li>
+				<li style="font-family: Times New Roman">Return to the command prompt then type “:wq” finally press Enter.</li>
+				<p style="font-family: Times New Roman">Eevrything is setup!</p>
 			</ol>
-				<h3>Viewing Your Local Website</h3>
-				<p>To view your local server, open your browser and type in the IP in step 10. For example, it will be ‘127.0.0.1’ (excluding :80:80). You should be able to see your site now.</p>
+				<h3 style="font-family: Times New Roman">Viewing Your Local Website</h3>
+				<p style="font-family: Times New Roman">To view your local server, open your browser and type in the IP in step 10. For example, it will be ‘127.0.0.1’ (excluding :80:80). You should be able to see your site now.</p>
 			</div>
 			</div>
 
