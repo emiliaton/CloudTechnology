@@ -1,0 +1,114 @@
+main{
+  font-family: 'Sora', sans-serif;
+}
+.title{
+  text-align: center;
+  font-family: 'Commissioner', sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #023047;
+}
+.box1{
+  display: flex;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.box2{
+  display: flex;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.cont{
+  width: 50%;
+  margin: auto;
+}
+.part4{
+  flex: 2;
+}
+.part5{
+  flex: 2;
+}
+img{
+  border-radius: 10px;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.hero-image{
+	height: 100vh;
+}
+
+
+footer{
+background-color: #000000;
+color: white;
+}
+
+.foot{
+    font-size: 1.6vh;
+    color: #FFFFFF;
+    font-family: 'Lora', serif;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.footerimg{
+    width: ;
+    opacity: 70%;
+}
+.footerimg:hover{
+    opacity: 100%;
+    color: white;
+}
+
+.button{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    border: #9BDAF2 3px solid;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top:20px;
+    font-family: 'Lora', serif;
+
+}
+.button:hover{
+    background: #F17C3A;
+    color: #ffff;
+    text-decoration: none;
+}
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
