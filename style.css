@@ -113,7 +113,7 @@ color: white;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.hero-image{
+.body{
 	background: url('img/bg_vc.png'); 
 	background-position: center; 
 	background-repeat: no-repeat; 
